@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+:root {
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    background-color: #23252C;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.app {
+    background-color: #1A1B21;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: clamp(400px, 450px, 800px);
+    margin-top: 20px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.info > *:not(:first-child) {
+    margin: 10px;
+    padding: 15px;
+}
+
+.imageContainer {
+    width: clamp(400px, 450px, 800px);
+    height: 400px;
+    background: url(../assets/business-man.jpg);
+    background-position-x: right;
+    background-position-y: center;
+    overflow: hidden;
+}
+
+.infoContainer {
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.infoContainer > * {
+    margin-bottom: 10px;
+}
+
+.name {
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+.job,
+.website {
+    font-weight: 400;
+}
+
+.job {
+    font-size: .9rem;
+    color: #F3BF99;
+}
+
+.website {
+    font-size: .6rem;
+    cursor: pointer;
+}
+
+.buttonContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.buttons {
+    cursor: pointer;
+    width: 150px;
+    height: 40px;
+    border: none;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.buttons:hover {
+    background-color: gray;
+}
+
+.buttonIcon {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+#linkedin {
+    background-color: #0077B5;
+}
+#linkedin:hover {
+    background-color: #033f63;
+}
+
+.about,
+.interests {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+}
+
+.aboutTitle,
+.interestsTitle {
+    font-weight: 700;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #FFFFFF;
+}
+
+.aboutParagraph,
+.interestsParagraph {
+    font-weight: 400;
+    font-size: .9rem;
+    color: #FFFFFF;
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+    background-color: #161619;
+}
+
+.footerIcon {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    padding: 10px;
+    background-color: #918E9B;
+    border-radius: 10px;
+    color: #161619;
+}
